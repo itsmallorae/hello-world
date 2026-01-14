@@ -1,7 +1,11 @@
 .site-slice {
-    max-width: 75%;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 5rem 0;
+
+    @media (max-width: 1200px) {
+        padding: 2rem;
+    }
 
     &__title {
         text-align: center;
@@ -19,16 +23,41 @@
         align-items: center;
         gap: 5rem;
 
+        img {
+            width: 100%;
+
+            // @media (max-width: 1200px) {
+            //     max-height: unset;
+            //     max-width: 100%;
+            // }
+        }
+
         @media (max-width: 1220px) {
             flex-direction: column !important;
         }
 
         &.flexrow {
             flex-direction: row;
+
+            img {
+                max-width: 700px;
+
+                @media (max-width: 1620px) {
+                    max-width: 500px;
+                }
+            }
         }
 
         &.flexrow-reverse {
             flex-direction: row-reverse;
+
+            img {
+                max-width: 700px;
+
+                @media (max-width: 1620px) {
+                    max-width: 500px;
+                }
+            }
         }
 
         &.flexcolumn {
@@ -56,22 +85,8 @@
     }
 
     &__container {
-        max-width: 1600px;
+        max-width: 95%;
         margin: 0 auto;
-    }
-
-    img {
-        max-height: 800px;
-        width: auto;
-
-        @media (max-width: 1680px) {
-            max-height: 500px;
-        }
-
-        @media (max-width: 1200px) {
-            max-height: unset;
-            max-width: 80%;
-        }
     }
 }
 
