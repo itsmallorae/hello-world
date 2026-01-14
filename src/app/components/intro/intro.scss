@@ -16,7 +16,8 @@
         }
 
         img {
-            max-height: 500px;
+            max-height: 700px;
+            margin: 0;
         }
     }
 
@@ -38,12 +39,12 @@
         color: var(--color-accent);
     }
 
-    &__img {
-        background-image: url(/seattle.jpg);
-        height: 700px;
-        width: 500px;
-        background-size: 200%;
-        background-position: center center;
-        border-radius: 20px;
-    }
+    // &__img {
+    //     background-image: url('/seattle.jpg');
+    //     height: 700px;
+    //     width: 500px;
+    //     background-size: 200%;
+    //     background-position: center center;
+    //     border-radius: 20px;
+    // }
 }
