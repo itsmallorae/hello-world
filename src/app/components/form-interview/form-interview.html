@@ -1,0 +1,37 @@
+<div class="interview-form">
+    <form [formGroup]="interviewForm" (ngSubmit)="onSubmit()">
+        <div class="interview-form__container">
+            <div class="">
+                <label for="first-name">First Name</label>
+                <input class="form-control" id="first-name" type="text" formControlName="firstname" />
+            </div>
+            <div class="">
+                <label for="last-name">Last Name</label>
+                <input class="form-control" id="last-name" type="text" formControlName="lastname" />
+            </div>
+            <div class="">
+                <label for="phone">Phone Number</label>
+                <input class="form-control" id="phone" type="phone" formControlName="phone" />
+            </div>
+            <div class="">
+                <label for="email">Email Address</label>
+                <input class="form-control" id="email" type="email" formControlName="email" />
+            </div>
+            <div class="">
+                <label for="company">Company</label>
+                <input class="form-control" id="company" type="text" formControlName="company" />
+            </div>
+            <div class="">
+                <label for="job">Position</label>
+                <input class="form-control" id="job" type="text" formControlName="job" />
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit" [disabled]="interviewForm.invalid">Request an Interview</button>
+    </form>
+</div>
+
+@if (isModalOpen) {
+<app-thank-you
+    (close)="isModalOpen = false">
+</app-thank-you>
+}

@@ -1,1 +1,236 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Dela+Gothic+One&display=swap');
+
+.dela-gothic-one-regular {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bitter-200 {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.bitter-300 {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.bitter-400 {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bitter-500 {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.bitter-600 {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.bitter-700 {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bitter-800 {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.bitter-900 {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root {
+    $root: &;
+
+    --font-display: "Dela Gothic One", sans-serif;
+    --font-body: "Bitter", serif;
+    --color-accent: #83a3ae;
+
+    --color-emp: #cd7068;
+    --color-def: #e9b572;
+    --color-ide: #9fc281;
+    --color-pro: #7c9de8;
+    --color-tes: #8b7ec0;
+}
+
+body {
+    background-color: #222;
+    color: white;
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+}
+
+.core {
+    &__title {
+        font-family: var(--font-display);
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__content {
+        font-size: 1.5rem;
+    }
+}
+
+.highlight {
+    color: var(--color-accent);
+
+    &-tiny {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    &-emp {
+        color: var(--color-emp);
+    }
+
+    &-def {
+        color: var(--color-def);
+    }
+
+    &-ide {
+        color: var(--color-ide);
+    }
+
+    &-pro {
+        color: var(--color-pro);
+    }
+
+    &-tes {
+        color: var(--color-tes);
+    }
+}
+
+img {
+    margin: 2rem auto;
+    border-radius: 20px;
+}
+
+.bordered {
+        border: 2px solid var(--color-accent);
+        filter: drop-shadow(0 0 0.75rem black);
+
+        &-emp {
+            border: 2px solid var(--color-emp);
+            filter: drop-shadow(0 0 0.75rem black);
+        }
+
+        &-def {
+            border: 2px solid var(--color-def);
+            filter: drop-shadow(0 0 0.75rem black);
+        }
+
+        &-ide {
+            border: 2px solid var(--color-ide);
+            filter: drop-shadow(0 0 0.75rem black);
+        }
+
+        &-pro {
+            border: 2px solid var(--color-pro);
+            filter: drop-shadow(0 0 0.75rem black);
+        }
+
+        &-tes {
+            border: 2px solid var(--color-tes);
+            filter: drop-shadow(0 0 0.75rem black);
+        }
+    }
+
+.gen-card {
+    background: #111;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-bottom: .5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: left;
+
+    .highlight, .highlight-emp, .highlight-def, .highlight-ide, .highlight-pro, .highlight-tes {
+        font-weight: bold;
+        display: inline-block;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+.svg-inline--fa {
+    height: 2rem;
+    width: 2rem;
+    color: var(--color-accent) !important;
+    margin: 1rem 0 1rem .5rem;
+
+    &:hover {
+        color: white !important;
+    }
+}
+
+.interview-form form {
+    text-align: center;
+}
+
+.interview-form button {
+    margin-top: 3rem;
+    background-color: var(--color-accent);
+    color: #111;
+    border-color: var(--color-accent);
+    padding: .75rem 2.75rem;
+
+    &:hover {
+        background: #222;
+        color: var(--color-accent);
+        border-color: var(--color-accent);
+    }
+}
+
+.btn:disabled, .btn.disabled, fieldset:disabled .btn {
+    margin-top: 3rem;
+    background-color: #111;
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    padding: .75rem 2.75rem;
+}
+
+.interview-form__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+    text-align: left;
+}
+
+.form-control {
+    background-color: #222;
+    border-color: var(--color-accent);
+    color: white;
+}
+
+label {
+    font-weight: bold;
+    color: var(--color-accent);
+    margin-bottom: .5rem;
+}

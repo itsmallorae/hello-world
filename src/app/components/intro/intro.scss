@@ -1,0 +1,39 @@
+
+.intro {
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        max-width: 75vw;
+        margin: 5rem auto;
+        text-align: right;
+        gap: 3rem;
+
+        img {
+            max-height: 500px;
+        }
+    }
+
+    &__content {
+        max-width: 600px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__name {
+        color: var(--color-accent);
+    }
+
+    &__img {
+        background-image: url(/seattle.jpg);
+        height: 700px;
+        width: 500px;
+        background-size: 200%;
+        background-position: center center;
+        border-radius: 20px;
+    }
+}

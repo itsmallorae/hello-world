@@ -1,0 +1,29 @@
+.card-grid {
+    display: flex;
+    max-width: 1400px;
+    gap: 1rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: stretch;
+
+    &__card {
+        background: #111;
+        border: var(--color-accent) 3px solid;
+        border-radius: 20px;
+        max-width: 400px;
+
+        padding: 2rem;
+    }
+
+    &__title {
+        text-align: center;
+        color: var(--color-accent);
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+    }
+
+    &__content {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+    }
+}

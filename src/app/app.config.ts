@@ -6,6 +6,9 @@ import { routes } from './app.routes';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
+    provideRouter(
+      routes
+      // withAnchorScrolling() // for fragment navigation
+    )
   ]
 };

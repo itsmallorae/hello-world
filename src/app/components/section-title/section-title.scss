@@ -1,0 +1,16 @@
+.section-title {
+    padding: 3rem;
+    background: #111;
+    text-align: center;
+    
+    &__title {
+        font-size: 6rem;
+        font-family: var(--font-display);
+    }
+
+    &__body {
+        font-size: 1.5rem;
+        color: white !important;
+        margin-top: 1rem;
+    }
+}

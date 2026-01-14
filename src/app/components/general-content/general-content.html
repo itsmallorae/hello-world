@@ -1,0 +1,12 @@
+<div class="site-slice">
+    <div class="site-slice__container">
+        <div class="site-slice__title core__title" [innerHTML]="title()"></div>
+        <div class="site-slice__content" [class]="flexDirection()">
+            <img [class]="imgClass()" [src]="imgSrc()" />
+            <div class="site-slice__text">
+                <p [innerHTML]="bodyOne()"></p>
+                <p [innerHTML]="bodyTwo()"></p>
+            </div>
+        </div>
+    </div>
+</div>
