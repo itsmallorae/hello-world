@@ -23,6 +23,10 @@
         align-items: center;
         gap: 5rem;
 
+        @media (max-width: 1024px) {
+            font-size: 1rem;
+        }
+
         img {
             width: 100%;
 
@@ -81,6 +85,10 @@
         p:last-child {
             font-weight: bold;
             font-size: 1.75rem;
+
+            @media (max-width: 1024px) {
+            font-size: 1.15rem;
+        }
         }
     }
 

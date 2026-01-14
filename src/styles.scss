@@ -177,6 +177,10 @@ img {
         margin-bottom: 1rem;
         width: 100%;
     }
+
+    @media (max-width: 1024px) {
+        font-size: 1rem;
+    }
 }
 
 .svg-inline--fa {
