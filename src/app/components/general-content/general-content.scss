@@ -5,6 +5,10 @@
 
     &__title {
         text-align: center;
+
+        @media (max-width: 1200px) {
+            font-size: 2rem;
+        }
     }
 
     &__content {
@@ -14,6 +18,10 @@
         display: flex;
         align-items: center;
         gap: 5rem;
+
+        @media (max-width: 1220px) {
+            flex-direction: column !important;
+        }
 
         &.flexrow {
             flex-direction: row;
@@ -55,6 +63,15 @@
     img {
         max-height: 800px;
         width: auto;
+
+        @media (max-width: 1680px) {
+            max-height: 500px;
+        }
+
+        @media (max-width: 1200px) {
+            max-height: unset;
+            max-width: 80%;
+        }
     }
 }
 

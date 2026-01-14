@@ -12,6 +12,10 @@
         align-items: center;
         max-width: 75%;
         margin: 0 auto;
+
+        @media (max-width: 1220px) {
+            justify-content: center;
+        }
     }
 
     &__left,
@@ -20,6 +24,12 @@
             max-height: 100px;
             filter:invert(1);
             margin: 0 !important;
+        }
+    }
+
+    &__right {
+        @media (max-width: 1220px) {
+            display: none;
         }
     }
 
